@@ -19,7 +19,7 @@ print('Правила игры:\n'
 
 player1 = input('Введите имя первого игрока: ')
 player2 = input('Введите имя второго игрока: ')
-total_candy = 2021
+total_candy = 200
 max_step = 28
 flag = False
 
@@ -38,7 +38,6 @@ while total_candy != 0:
         if step == 0 or step > max_step:
             print('Слишком много, максимум 28 за один ход, попробуй еще раз: ')
         else:
-            total_candy -= step
             if step < total_candy and total_candy > 0:
                 total_candy -= step
                 print(f'Осталось {total_candy} конфет')
